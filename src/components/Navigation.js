@@ -15,6 +15,9 @@ const Navigation = () => {
         <NavLink to="/News">
           <li>News</li>
         </NavLink>
+        <NavLink to="/Bienvenue">
+          <li>Actualité</li>
+        </NavLink>
       </ul>
     </div>
   );
