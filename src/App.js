@@ -6,6 +6,7 @@ import Akwaba from "./pages/Akwaba";
 import "./App.css";
 import ImageReact from "./pages/ImageReact";
 import Errorpage from "./pages/Errorpage";
+import User from "./components/User";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/News" element={<News />} />
           <Route path="/Image" element={<ImageReact />} />
           <Route path="/Bienvenue" element={<Akwaba />} />
+          <Route path="/User" element={<User />} />
           <Route path="*" element={<Errorpage />} />
         </Routes>
       </Router>

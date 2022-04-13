@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import "./index.css";
 import "./custom.scss";
 
 // Put any other imports below so that CSS from your

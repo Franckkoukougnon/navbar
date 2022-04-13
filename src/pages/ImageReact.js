@@ -3,6 +3,8 @@ import { Button } from "react-bootstrap";
 import Navigation from "../components/Navigation";
 import FakeText from "./FakeText";
 import "bootstrap/dist/css/bootstrap.css";
+import { NavLink } from "react-router-dom";
+
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.
 
@@ -15,7 +17,7 @@ function ImageReact() {
       <FakeText />
       <Button
         onClick={() => {
-          alert("Bonjour");
+          alert("Bienvenue");
         }}
       >
         {" "}
