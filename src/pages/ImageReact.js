@@ -14,6 +14,7 @@ function ImageReact() {
       <Navigation />
 
       <h1> This is a page Image </h1>
+      <p> Test ok </p>
       <FakeText />
     </div>
   );
