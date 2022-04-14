@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../App.css";
 
@@ -17,6 +17,9 @@ const Navigation = () => {
         </NavLink>
         <NavLink to="/Bienvenue">
           <li>Actualité</li>
+        </NavLink>
+        <NavLink to="/User">
+          <li>Profil</li>
         </NavLink>
       </ul>
     </div>
