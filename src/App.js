@@ -10,7 +10,7 @@ import User from "./components/User";
 
 const App = () => {
   return (
-    <div class="container">
+    <div>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />

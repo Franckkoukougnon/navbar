@@ -15,14 +15,6 @@ function ImageReact() {
 
       <h1> This is a page Image </h1>
       <FakeText />
-      <Button
-        onClick={() => {
-          alert("Bienvenue");
-        }}
-      >
-        {" "}
-        Click Here{" "}
-      </Button>
     </div>
   );
 }
