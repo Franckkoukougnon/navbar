@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navigation from "./Navigation";
+
 import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
@@ -50,7 +50,6 @@ const User = () => {
 
   return (
     <div>
-      <Navigation />
       <div className="container">
         <h3> Register User</h3>
         <input

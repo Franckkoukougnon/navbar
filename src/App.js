@@ -7,11 +7,13 @@ import "./App.css";
 import ImageReact from "./pages/ImageReact";
 import Errorpage from "./pages/Errorpage";
 import User from "./components/User";
+import Navigation from "./components/Navigation";
 
 const App = () => {
   return (
     <div>
       <Router>
+        <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/News" element={<News />} />

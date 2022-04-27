@@ -1,9 +1,6 @@
-import React from "react";
-import { Button } from "react-bootstrap";
-import Navigation from "../components/Navigation";
 import FakeText from "./FakeText";
 import "bootstrap/dist/css/bootstrap.css";
-import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.
@@ -11,11 +8,17 @@ import { NavLink } from "react-router-dom";
 function ImageReact() {
   return (
     <div>
-      <Navigation />
-
-      <h1> This is a page Image </h1>
-      <p> Test ok </p>
-      <FakeText />
+      <motion.div
+        animate={{
+          scale: [1, 2, 2, 1, 1],
+          rotate: [0, 0, 270, 270, 0],
+          borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+        }}
+      >
+        <div className="container">
+          <FakeText />
+        </div>
+      </motion.div>
     </div>
   );
 }
