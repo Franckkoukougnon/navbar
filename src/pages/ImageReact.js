@@ -1,6 +1,6 @@
-import FakeText from "./FakeText";
 import "bootstrap/dist/css/bootstrap.css";
 import { motion } from "framer-motion";
+import Img from "../components/Img";
 
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.
@@ -16,7 +16,7 @@ function ImageReact() {
         }}
       >
         <div className="container">
-          <FakeText />
+          <Img />
         </div>
       </motion.div>
     </div>

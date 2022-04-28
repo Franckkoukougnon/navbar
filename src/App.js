@@ -7,6 +7,8 @@ import "./App.css";
 import ImageReact from "./pages/ImageReact";
 import Errorpage from "./pages/Errorpage";
 import User from "./components/User";
+
+import NavBar from "./components/NavBar";
 import Navigation from "./components/Navigation";
 
 const App = () => {
@@ -14,6 +16,8 @@ const App = () => {
     <div>
       <Router>
         <Navigation />
+
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/News" element={<News />} />

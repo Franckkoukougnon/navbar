@@ -1,27 +1,22 @@
 import React from "react";
-
-import FakeText from "./FakeText";
+import { motion } from "framer-motion";
+import town from "../images/1.jpg";
 
 const Akwaba = () => {
   return (
     <div>
       <h1> This is Akwaba page </h1>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8">
-            {" "}
-            <FakeText />
-          </div>
-          <div class="col-sm-4">
-            <FakeText />
-          </div>
+      <motion.div
+        animate={{
+          scale: [1, 2, 2, 1, 1],
+          rotate: [0, 0, 270, 270, 0],
+          borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+        }}
+      >
+        <div className="container align-content-center">
+          <img src={town} class="img-fluid" alt="..." />
         </div>
-        <div class="row">
-          <div class="col-sm">col-sm</div>
-          <div class="col-sm">col-sm</div>
-          <div class="col-sm">col-sm</div>
-        </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
